@@ -1,11 +1,8 @@
 ! ============================================================
-! 📵 全面封锁短视频 & 精准屏蔽微信视频号
-! ------------------------------------------------------------
-! 抖音/快手：全面拦截（启动、API、视频、广告、图片、埋点）
-! 微信：仅屏蔽视频号功能（播放、封面、推荐、评论、交互）
-! 不影响公众号、微信主功能、腾讯视频主站
+! 📵 抖音 / 快手 / 微信视频号 全面屏蔽列表（张工专用）
 ! ============================================================
-! ===================== 📱 抖音 / ByteDance =====================
+
+! ===================== 📱 抖音 / ByteDance 全封杀 =====================
 ||aweme.snssdk.com^
 ||aweme-eagle.snssdk.com^
 ||api.amemv.com^
@@ -19,7 +16,6 @@
 ||douyincdn.com^
 ||douyinpic.com^
 ||douyinvod-tos.pstatp.com^
-||aweme.snssdk.com^
 ||tnc3-core-c-lf.snssdk.com^
 ||tnc3-normal-c-lf.snssdk.com^
 ||frontier.snssdk.com^
@@ -31,7 +27,11 @@
 ||snssdk.com^
 ||amemv.com^
 ||iesdouyin.com^
-! ===================== 📱 快手 / Kuaishou =====================
+||bytedance.com^
+||toutiao.com^
+||toutiaoimg.com^
+
+! ===================== 📱 快手 / Kuaishou 全封杀 =====================
 ||api.gifshow.com^
 ||api.kuaishou.com^
 ||api.kuaishouzt.com^
@@ -41,6 +41,7 @@
 ||ksapisrv.com^
 ||yximgs.com^
 ||kwimgs.com^
+||ks-cdn.com^
 ||ali2.a.kwimgs.com^
 ||jsapi.ksapisrv.com^
 ||log-sdk.gifshow.com^
@@ -48,37 +49,53 @@
 ||ad.kuaishou.com^
 ||zt.gifshow.com^
 ||zt.kuaishou.com^
-! ===================== 🎯 微信视频号（Finder）精准屏蔽 =====================
-! 🎬 视频播放 & 封面图加载
+
+! ===================== 🎯 微信视频号（Finder）精准封杀 =====================
+
+! 🎬 视频播放 / 视频流
 ||vv.video.qq.com^
 ||finder.video.qq.com^
 ||finder.video.qq.com.cn^
 ||finder.video.wechat.com^
 ||findervp.video.qq.com^
-||findercover.video.qq.com^
-||finderpreload.video.qq.com^
 ||finder.video.qpic.cn^
 ||finder.video.mp.qq.com^
+
+! 🖼️ 封面 / 图片 / 预加载
+||findercover.video.qq.com^
 ||findercover.qpic.cn^
-||finderqv.video.qq.com^
-! 🔍 推荐 / 查询 / 信息流接口
+||finderpreload.video.qq.com^
+
+! 🔍 推荐 / 查询 / 信息流
 ||finder-api.wechat.com^
 ||finder-api.weixin.qq.com^
 ||finderfeed.video.qq.com^
 ||finderdiscovery.video.qq.com^
 ||findersearch.video.qq.com^
 ||finderrec.video.qq.com^
-! 💬 评论 / 点赞 / 互动行为
+
+! 💬 评论 / 点赞 / 互动
 ||finderinteraction.video.qq.com^
 ||finderlike.video.qq.com^
 ||findercomment.video.qq.com^
 ||finderugc.video.qq.com^
-! 📤 上传 / 预加载 / 用户空间
+
+! 📤 上传 / 用户主页 / UGC
 ||ugc.weishi.qq.com^
 ||weishi.qq.com^
 ||finderupload.video.qq.com^
 ||finderupload.qpic.cn^
 ||finderugc-api.weixin.qq.com^
-! ⚠️ 注意：以下域名千万不要再屏蔽（会导致公众号和微信主功能出问题）
-! ❌ 不要屏蔽：qlogo.cn / qpic.cn / mp.weixin.qq.com / video.qq.com（主站）
-! ❌ 不要屏蔽：wx.qlogo.cn / res.wx.qq.com / mpvideo.qpic.cn（公众号封面）
+
+! 📎 其他可能用到的辅助域名
+||finderprofile.video.qq.com^
+||finderrecommend.video.qq.com^
+||finderreport.video.qq.com^
+||finderad.video.qq.com^
+
+! ============================================================
+! 📌 注意事项：
+! - 不会误伤公众号文章、支付、聊天、腾讯视频主站等功能
+! - 如果视频号依然能播放，说明微信未使用 AGH DNS 或走了 IPv6 / DoH / IP 直连
+! - 建议同时在防火墙封 UDP/53, TCP/853, UDP/443, TCP/443 以阻止绕过
+! ============================================================
