@@ -1,0 +1,84 @@
+! ============================================================
+! 📵 全面封锁短视频 & 精准屏蔽微信视频号
+! ------------------------------------------------------------
+! 抖音/快手：全面拦截（启动、API、视频、广告、图片、埋点）
+! 微信：仅屏蔽视频号功能（播放、封面、推荐、评论、交互）
+! 不影响公众号、微信主功能、腾讯视频主站
+! ============================================================
+! ===================== 📱 抖音 / ByteDance =====================
+||aweme.snssdk.com^
+||aweme-eagle.snssdk.com^
+||api.amemv.com^
+||api3-core-c-lf.amemv.com^
+||api3-normal-c-lf.amemv.com^
+||hotsoon.snssdk.com^
+||lf.snssdk.com^
+||pstatp.com^
+||byteimg.com^
+||douyinvod.com^
+||douyincdn.com^
+||douyinpic.com^
+||douyinvod-tos.pstatp.com^
+||aweme.snssdk.com^
+||tnc3-core-c-lf.snssdk.com^
+||tnc3-normal-c-lf.snssdk.com^
+||frontier.snssdk.com^
+||log.snssdk.com^
+||effect.snssdk.com^
+||pull-f5.douyinvod.com^
+||push-f5.douyinvod.com^
+||i.snssdk.com^
+||snssdk.com^
+||amemv.com^
+||iesdouyin.com^
+! ===================== 📱 快手 / Kuaishou =====================
+||api.gifshow.com^
+||api.kuaishou.com^
+||api.kuaishouzt.com^
+||api.kwaizt.com^
+||apijs.ksapisrv.com^
+||v.kuaishou.com^
+||ksapisrv.com^
+||yximgs.com^
+||kwimgs.com^
+||ali2.a.kwimgs.com^
+||jsapi.ksapisrv.com^
+||log-sdk.gifshow.com^
+||log.kuaishou.com^
+||ad.kuaishou.com^
+||zt.gifshow.com^
+||zt.kuaishou.com^
+! ===================== 🎯 微信视频号（Finder）精准屏蔽 =====================
+! 🎬 视频播放 & 封面图加载
+||vv.video.qq.com^
+||finder.video.qq.com^
+||finder.video.qq.com.cn^
+||finder.video.wechat.com^
+||findervp.video.qq.com^
+||findercover.video.qq.com^
+||finderpreload.video.qq.com^
+||finder.video.qpic.cn^
+||finder.video.mp.qq.com^
+||findercover.qpic.cn^
+||finderqv.video.qq.com^
+! 🔍 推荐 / 查询 / 信息流接口
+||finder-api.wechat.com^
+||finder-api.weixin.qq.com^
+||finderfeed.video.qq.com^
+||finderdiscovery.video.qq.com^
+||findersearch.video.qq.com^
+||finderrec.video.qq.com^
+! 💬 评论 / 点赞 / 互动行为
+||finderinteraction.video.qq.com^
+||finderlike.video.qq.com^
+||findercomment.video.qq.com^
+||finderugc.video.qq.com^
+! 📤 上传 / 预加载 / 用户空间
+||ugc.weishi.qq.com^
+||weishi.qq.com^
+||finderupload.video.qq.com^
+||finderupload.qpic.cn^
+||finderugc-api.weixin.qq.com^
+! ⚠️ 注意：以下域名千万不要再屏蔽（会导致公众号和微信主功能出问题）
+! ❌ 不要屏蔽：qlogo.cn / qpic.cn / mp.weixin.qq.com / video.qq.com（主站）
+! ❌ 不要屏蔽：wx.qlogo.cn / res.wx.qq.com / mpvideo.qpic.cn（公众号封面）
