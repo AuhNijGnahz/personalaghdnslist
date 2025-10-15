@@ -1,0 +1,83 @@
+! ======================================
+! 🍏 Apple 系统服务（强烈建议放行）
+! ======================================
+@@||apple.com^
+@@||icloud.com^
+@@||icloud-content.com^
+@@||me.com^
+@@||mzstatic.com^
+@@||itunes.apple.com^
+@@||xp.apple.com^
+@@||xp.itunes-apple.com.akadns.net^
+@@||weather-analytics-events.apple.com^
+@@||gsp-ssl.ls.apple.com^
+@@||gspe1-ssl.ls.apple.com^
+@@||configuration.apple.com^
+@@||init.itunes.apple.com^
+@@||identity.apple.com^
+@@||idmsa.apple.com^
+@@||appleid.apple.com^
+@@||push.apple.com^
+@@||deviceenrollment.apple.com^
+@@||captive.apple.com^
+@@||cdn-apple.com^
+
+! ======================================
+! 🗺️ 地图与定位服务（导航、打车等必备）
+! ======================================
+@@||amap.com^
+@@||autonavi.com^
+@@||dispatcher.is.autonavi.com^
+@@||map.baidu.com^
+@@||api.map.baidu.com^
+@@||lbs.map.qq.com^
+@@||maps.googleapis.com^
+@@||maps.gstatic.com^
+@@||ip-api.com^
+@@||ipinfo.io^
+
+! ======================================
+! 📦 CDN / 静态资源加载（网页 & App 必需）
+! ======================================
+@@||gstatic.com^
+@@||googleapis.com^
+@@||jsdelivr.net^
+@@||cloudflare.com^
+@@||cloudfront.net^
+@@||akamaihd.net^
+@@||akadns.net^
+@@||fastly.net^
+@@||cdn77.org^
+@@||cdn.jsdelivr.net^
+@@||cdn.apple.com^
+
+! ======================================
+! 📨 推送与认证服务（推送、证书验证）
+! ======================================
+@@||firebaseio.com^
+@@||firebaseinstallations.googleapis.com^
+@@||push.apple.com^
+@@||fcm.googleapis.com^
+@@||apns.apple.com^
+@@||pki.goog^
+
+! ======================================
+! 📱 第三方常用 App 域名（建议放行）
+! ======================================
+@@||t.me^
+@@||telegram.org^
+@@||whatsapp.net^
+@@||line.me^
+@@||linkedin.com^
+@@||zoom.us^
+@@||slack.com^
+@@||discord.com^
+
+! ======================================
+! 📡 网络检测 / 联网探针（防止“无互联网”误报）
+! ======================================
+@@||captive.apple.com^
+@@||clients3.google.com^
+@@||connectivitycheck.gstatic.com^
+@@||detectportal.firefox.com^
+@@||connectivitycheck.android.com^
